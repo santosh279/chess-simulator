@@ -1,3 +1,5 @@
+import { Simulator } from "./Simulator";
+
 function main() {
     const args = process.argv.slice(2);
     if(args.length !== 2) {
@@ -9,7 +11,9 @@ function main() {
     const [piece, position] = args;
 
     try {
-        
+        const simulator = new Simulator();
+        const moves = simulator.getPossibleMoves(piece, position);
+        console.log(moves.length ? moves.join(', ') : 'No possible moves');
     } catch (error) {
         console.error('Error:', (error as Error).message);
         process.exit(1);
