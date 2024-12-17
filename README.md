@@ -17,7 +17,7 @@ The application simulates an empty 8x8 chessboard and calculates possible moveme
 
 1. Clone the repository
 ```bash
-git clone 
+git clone https://github.com/santosh279/chess-simulator.git
 cd chess-simulator
 ```
 
